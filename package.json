@@ -1,0 +1,30 @@
+{
+  "name": "nativescript-dev-coffeescript",
+  "version": "0.0.6",
+  "description": "CoffeeScript support for NativeScript projects.",
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js"
+  },
+  "nativescript": {
+    "hooks": [{
+      "type": "before-prepare",
+      "script": "lib/before-prepare.js",
+      "inject": true
+    }, {
+      "type": "before-watch",
+      "script": "lib/watch.js",
+      "inject": true
+    }]
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/nativescript-dev-coffeescript.git"
+  },
+  "dependencies": {
+    "coffee-script": "*",
+    "glob": "*",
+    "nativescript-hook": "^0.2.0"
+  }
+}
