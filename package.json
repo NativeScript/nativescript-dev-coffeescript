@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "coffee-script": "*",
+    "coffeelint": "*",
+    "coffeelint-stylish": "*",
     "glob": "*",
     "nativescript-hook": "^0.2.0"
   }
